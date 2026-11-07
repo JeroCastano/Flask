@@ -1,0 +1,21 @@
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"
+
+@app.route("/")
+def paquito():
+    return "<p>paquito!</p>"
+
+@app.route("/")
+def cuantos_años_tienes():
+    return "<p>cuantos, años, tienes!</p>"
+
+@app.route("/")
+def como_te_llamas():
+    return "<p>come, te, llamas!</p>"
+
+app.run()
